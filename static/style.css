@@ -1,0 +1,146 @@
+/* Reset some default styles for a cleaner look */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #ff660088;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ff6600;
+}
+
+/* Style the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    padding: 10px 20px;
+}
+
+.submenu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.submenu li a:hover {
+    color: #ff6600;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post-list ul {
+    list-style: none;
+}
+
+.post-list li {
+    margin-bottom: 20px;
+}
+
+.post-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+    background-color: #ff6600;
+}
+/* 이전 코드 유지 */
+
+/* 스타일링된 소셜 미디어 공유 아이콘 */
+.social-share {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    text-align: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}

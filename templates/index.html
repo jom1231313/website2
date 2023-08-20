@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>메인 페이지</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">홈</a></li>
+                <li><a href="/asdf.html">게시글 작성</a></li>
+                <li><a href="https://mycodinghackingstudy.tistory.com/">tistory</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- 여기에 게시글 목록을 표시할 내용 추가 -->
+        <div class="post-list">
+            <h2>게시글 목록</h2>
+            <ul>
+                {% for post in posts %}
+                    <li>
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.content }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+    <footer>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sapiente architecto sequi tenetur eum quaerat blanditiis deleniti temporibus aperiam, quos, aliquid, voluptatibus quo dolorum. Molestiae ab ad explicabo,<br> hic, ut distinctio neque quibusdam amet facere voluptatem, provident soluta? Quaerat ut repellat dolor. Accusamus quis itaque dolor quae expedita delectus consequuntur inventore earum magnam suscipit, officia perferendis,<br> nobis dolorem quidem iusto perspiciatis veritatis. Eos natus tenetur ipsa obcaecati eum nesciunt cum, explicabo odio esse quidem soluta, quas magnam magni! Maxime facilis<br> vero modi libero, laborum ab ratione quidem iste omnis debitis <br>sit quasi a eum, eos quis cumque delectus quae, consectetur aliquid expedita incidunt voluptatum quibusdam ipsam asperiores. Quam quos illo, officia placeat similique perspiciatis dolorum voluptas blanditiis animi nihil molestias vero corporis possimus accusamus. Quis explicabo, officiis officia ratione aliquam ipsa optio dolorum fugit.
+    </footer>
+</body>
+</html>
